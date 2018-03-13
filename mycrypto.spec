@@ -7,9 +7,12 @@ Group:	Applications/System
 License: MIT License	
 URL:	https://github.com/MyCryptoHQ/mycrypto.com
 Source0: https://github.com/MyCryptoHQ/mycrypto.com/releases/download/v%{version}/mycrypto-v%{version}.zip
+Source1: MyCrypto.desktop
 
 BuildRoot: %{_tmppath}/%{name}-v%{version}-root
 BuildArch: noarch
+BuildRequires: desktop-file-utils
+
 
 Requires: firefox
 
@@ -43,6 +46,8 @@ desktop-file-install                                    \
 %defattr(-,root,root,-)
 /usr/share/mycrypto/
 %doc
+%{_datadir}/applications/MyCrypto.desktop
+
 
 
 
