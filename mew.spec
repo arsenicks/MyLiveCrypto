@@ -40,17 +40,6 @@ desktop-file-install                                    \
 --dir=${RPM_BUILD_ROOT}%{_datadir}/applications         \
 %{SOURCE1}
 
-#cat > %{buildroot}/usr/share/mew/MyEtherWallet.desktop <<'EOF'
-#[Desktop Entry]
-#Name=MyEtherWallet
-#Comment=MyEtherWallet is a free, open-source, client-side tool for easily & securely interacting with the Ethereum network.
-#Exec=brave /usr/share/mew/index.html
-#Icon=/usr/share/mew/images/myetherwallet-logo-square.png
-#Categories=Application;Network;X-Red-Hat-Base;
-#Type=Application
-#Terminal=0
-#X-Desktop-File-Install-Version=0.3
-#EOF
 
 %clean
 %{__rm} -rf %{buildroot}

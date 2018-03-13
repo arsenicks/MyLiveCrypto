@@ -31,6 +31,10 @@ You and only you are responsible for your security.
 %{__install} -d -m0755 %{buildroot}/usr/share/mycrypto
 %{__cp} -av * %{buildroot}/usr/share/mycrypto
 
+desktop-file-install                                    \
+--dir=${RPM_BUILD_ROOT}%{_datadir}/applications         \
+%{SOURCE1}
+
 %clean
 %{__rm} -rf %{buildroot}
 
