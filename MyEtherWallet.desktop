@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=MyEtherWallet
 Comment=MyEtherWallet is a free, open-source, client-side tool for easily & securely interacting with the Ethereum network.
-Exec=brave /usr/share/mew/index.html
+Exec=xdg-open /usr/share/mew/index.html
 Icon=/usr/share/mew/images/myetherwallet-logo-square.png
 Categories=Application;Network;X-Red-Hat-Base;
 Type=Application

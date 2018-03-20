@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=MyCrypto
 Comment=MyCrypto is a free, open-source, client-side tool for easily & securely interacting with the Ethereum network.
-Exec=brave /usr/share/mycrypto/index.html
+Exec=xdg-open /usr/share/mycrypto/index.html
 Icon=/usr/share/mew/images/mycrypto-logo-square.png
 Categories=Application;Network;X-Red-Hat-Base;
 Type=Application
