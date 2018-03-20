@@ -1,7 +1,7 @@
 Name:	etherwallet
 Version:	3.20.03
 Release:	1%{?dist}
-Summary:	Packaged version of MyEtherWallet. Package maintained by Rene Jr Purcell
+Summary:	Packaged version of MyEtherWallet. Package maintained by Rene Jr Purcell.
 
 Group:	Applications/System	
 License: MIT License	
