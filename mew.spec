@@ -47,8 +47,8 @@ desktop-file-install                                    \
 %files
 %defattr(-,root,root,-)
 /usr/share/mew/
-%doc
 %{_datadir}/applications/MyEtherWallet.desktop
+%doc
 
 
 

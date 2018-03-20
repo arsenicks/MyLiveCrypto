@@ -4,7 +4,7 @@ Release:	1%{?dist}
 Summary:	Packaged version of MyCrypto. Package maintained by Rene Jr Purcell
 
 Group:	Applications/System	
-License: MIT License	
+License: MIT License (MIT)
 URL:	https://github.com/MyCryptoHQ/mycrypto.com
 Source0: https://github.com/MyCryptoHQ/mycrypto.com/releases/download/v%{version}/mycrypto-v%{version}.zip
 Source1: MyCrypto.desktop
@@ -45,8 +45,8 @@ desktop-file-install                                    \
 %files
 %defattr(-,root,root,-)
 /usr/share/mycrypto/
-%doc
 %{_datadir}/applications/MyCrypto.desktop
+%doc
 
 
 
