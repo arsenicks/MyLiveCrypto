@@ -7,7 +7,7 @@ Group:	Applications/System
 License: MIT License (MIT)
 URL:	https://github.com/MyCryptoHQ/mycrypto.com
 Source0: https://github.com/MyCryptoHQ/mycrypto.com/releases/download/v%{version}/mycrypto-v%{version}.zip
-Source1: MyCrypto.desktop
+Source1: https://github.com/arsenicks/MyLiveCrypto/blob/master/MyCrypto.desktop
 
 BuildRoot: %{_tmppath}/%{name}-v%{version}-root
 BuildArch: noarch

@@ -7,7 +7,7 @@ Group:	Applications/System
 License: MIT License	
 URL:	https://github.com/kvhnuke/etherwallet	
 Source0: https://github.com/kvhnuke/etherwallet/releases/download/v%{version}/etherwallet-v%{version}.zip
-Source1: MyEtherWallet.desktop
+Source1: https://github.com/arsenicks/MyLiveCrypto/blob/master/MyEtherWallet.desktop
 
 BuildRoot: %{_tmppath}/%{name}-v%{version}-root
 BuildArch: noarch
