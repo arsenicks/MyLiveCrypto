@@ -39,9 +39,11 @@ desktop-file-install                                    \
 %doc
 
 %changelog
-* Mon Mar 19 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.21.02-1
-- Initial spec file
-
 * Thu Mar 22 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.21.02-2
 - Added changelog
 - Added license file
+
+* Mon Mar 19 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.21.02-1
+- Initial spec file
+
+
