@@ -1,12 +1,13 @@
 Name:	mycrypto
 Version:	3.12.0
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Packaged version of MyCrypto
 
 License: MIT
 URL:	https://github.com/MyCryptoHQ/mycrypto.com
 Source0: https://github.com/MyCryptoHQ/mycrypto.com/releases/download/v%{version}/mycrypto-v%{version}.zip
 Source1: https://github.com/arsenicks/MyLiveCrypto/blob/master/MyCrypto.desktop
+Source2: https://github.com/MyCryptoHQ/mycrypto.com/blob/master/LICENSE
 
 BuildArch: noarch
 BuildRequires: desktop-file-utils
@@ -29,9 +30,15 @@ desktop-file-install                                    \
 %{SOURCE1}
 
 %files
+%license LICENSE
 %{_datadir}/mycrypto/
 %{_datadir}/applications/MyCrypto.desktop
 %doc
 
 %changelog
+* Wed Mar 21 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.12.0-1
+- Initial spec file
 
+* Thu Mar 22 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.12.0-2
+- Added changelog
+- Added license file

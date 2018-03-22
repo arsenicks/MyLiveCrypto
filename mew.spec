@@ -1,12 +1,13 @@
 Name:	etherwallet
 Version:	3.21.02
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Packaged version of MyEtherWallet
 
 License: MIT
 URL:	https://github.com/kvhnuke/etherwallet	
 Source0: https://github.com/kvhnuke/etherwallet/releases/download/v%{version}/etherwallet-v%{version}.zip
 Source1: https://github.com/arsenicks/MyLiveCrypto/blob/master/MyEtherWallet.desktop
+Source2: https://github.com/kvhnuke/etherwallet/blob/mercury/LICENSE.md
 
 BuildArch: noarch
 BuildRequires: desktop-file-utils
@@ -32,7 +33,15 @@ desktop-file-install                                    \
 %{SOURCE1}
 
 %files
+%license LICENSE.md
 %{_datadir}/mew/
 %{_datadir}/applications/MyEtherWallet.desktop
 %doc
+
 %changelog
+* Mon Mar 19 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.21.02-1
+- Initial spec file
+
+* Thu Mar 22 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.21.02-2
+- Added changelog
+- Added license file
