@@ -30,7 +30,7 @@ desktop-file-install                                    \
 %{SOURCE1}
 
 %files
-%license LICENSE
+%license %{_datadir}/LICENSE
 %{_datadir}/mycrypto/
 %{_datadir}/applications/MyCrypto.desktop
 %doc

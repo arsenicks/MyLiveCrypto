@@ -33,7 +33,7 @@ desktop-file-install                                    \
 %{SOURCE1}
 
 %files
-%license LICENSE.md
+%license %{_datadir}/LICENSE.md
 %{_datadir}/mew/
 %{_datadir}/applications/MyEtherWallet.desktop
 %doc
