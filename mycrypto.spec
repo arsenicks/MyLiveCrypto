@@ -24,13 +24,14 @@ You and only you are responsible for your security.
 %install
 install -d -m0755 %{buildroot}/usr/share/mycrypto
 cp -av * %{buildroot}/usr/share/mycrypto
+cp -av %{SOURCE2} %{buildroot}/usr/share/mycrypto/
 
 desktop-file-install                                    \
 --dir=${RPM_BUILD_ROOT}%{_datadir}/applications         \
 %{SOURCE1}
 
 %files
-%license %{_datadir}/LICENSE
+%license %{_datadir}/mycrypto/LICENSE
 %{_datadir}/mycrypto/
 %{_datadir}/applications/MyCrypto.desktop
 %doc

@@ -1,6 +1,6 @@
 Name:	etherwallet
-Version:	3.21.02
-Release:	2%{?dist}
+Version:	3.21.03
+Release:	1%{?dist}
 Summary:	Packaged version of MyEtherWallet
 
 License: MIT
@@ -27,21 +27,23 @@ It was created and is maintained by kvhnuke and tayvano.
 %install
 install -d -m0755 %{buildroot}/usr/share/mew/
 cp -av * %{buildroot}/usr/share/mew/
+cp -av %{SOURCE2} %{buildroot}/usr/share/mew/
 
 desktop-file-install                                    \
 --dir=${RPM_BUILD_ROOT}%{_datadir}/applications         \
 %{SOURCE1}
 
 %files
-%license %{_datadir}/LICENSE.md
+%license %{_datadir}/mew/LICENSE.md
 %{_datadir}/mew/
 %{_datadir}/applications/MyEtherWallet.desktop
 %doc
 
 %changelog
-* Thu Mar 22 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.21.02-2
+* Thu Mar 22 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.21.03-1
 - Added changelog
 - Added license file
+- build with v3.21.03
 
 * Mon Mar 19 2018 Rene Jr Purcell <arsenick@fedoraproject.org> - 3.21.02-1
 - Initial spec file
